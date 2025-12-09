@@ -1,0 +1,117 @@
+
+frontend:
+  themes:
+    TempoTheme:
+      # Couleurs du graphique Énergie (l'ordre est crucial)
+      energy-grid-consumption-color-0: "#2196F3" # 1. Bleu HC (Bleu clair)
+      energy-grid-consumption-color-1: "#0D47A1" # 2. Bleu HP (Bleu foncé)
+      energy-grid-consumption-color-2: "#E0E0E0" # 3. Blanc HC (Gris clair/Blanc)
+      energy-grid-consumption-color-3: "#616161" # 4. Blanc HP (Gris foncé)
+      energy-grid-consumption-color-4: "#EF5350" # 5. Rouge HC (Rouge clair)
+      energy-grid-consumption-color-5: "#B71C1C" # 6. Rouge HP (Rouge foncé)
+      energy-grid-consumption-color-6: "#9C27B0" # 7. Abonnement (Violet)
+      modes:
+        dark:
+          energy-grid-consumption-color-2: "#BDBDBD" # Blanc un peu plus visible en mode sombre
+
+
+
+
+shell_command:
+  update_linky_tempo: "python3 /config/linky_tempo_updater.py"
+
+
+
+input_number:
+  linky_conso_bleu_hc:
+    name: Conso Bleu HC
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: kWh
+    icon: mdi:flash
+  linky_conso_bleu_hp:
+    name: Conso Bleu HP
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: kWh
+    icon: mdi:flash
+  linky_conso_blanc_hc:
+    name: Conso Blanc HC
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: kWh
+    icon: mdi:flash
+  linky_conso_blanc_hp:
+    name: Conso Blanc HP
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: kWh
+    icon: mdi:flash
+  linky_conso_rouge_hc:
+    name: Conso Rouge HC
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: kWh
+    icon: mdi:flash
+  linky_conso_rouge_hp:
+    name: Conso Rouge HP
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: kWh
+    icon: mdi:flash
+
+  linky_cout_bleu_hc:
+    name: Coût Bleu HC
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:currency-eur
+  linky_cout_bleu_hp:
+    name: Coût Bleu HP
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:currency-eur
+  linky_cout_blanc_hc:
+    name: Coût Blanc HC
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:currency-eur
+  linky_cout_blanc_hp:
+    name: Coût Blanc HP
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:currency-eur
+  linky_cout_rouge_hc:
+    name: Coût Rouge HC
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:currency-eur
+  linky_cout_rouge_hp:
+    name: Coût Rouge HP
+    min: 0
+    max: 100000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:currency-eur
+  linky_cout_abo:
+    name: Coût Abonnement
+    min: 0
+    max: 1000
+    step: 0.01
+    unit_of_measurement: EUR
+    icon: mdi:calendar-clock
