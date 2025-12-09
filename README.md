@@ -19,7 +19,7 @@
 * L'**abonnement**
 
 Ce guide vous accompagne pas à pas pour mettre en place les capteurs nécessaires, installer le script de mise à jour Linky Tempo, configurer les thèmes et automatiser l'import des données.
-
+Par défaut, les données sont mises à jour depuis le 1er aout 2025 (date du dernier changement de tarif).
 ---
 
 # 🧩 Prérequis
