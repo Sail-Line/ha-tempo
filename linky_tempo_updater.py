@@ -222,8 +222,12 @@ def main():
             msg = {
                 "id": cmd_id, "type": "recorder/import_statistics",
                 "metadata": {
-                    "statistic_id": stat_id, "source": source_domain,
-                    "has_mean": False, "has_sum": True,
+                    "statistic_id": stat_id,
+                    "source": source_domain,
+                    "has_mean": False,
+                    "mean_type": 0,
+                    "unit_class": None if "cout" in k else "energy",
+                    "has_sum": True,
                     "unit_of_measurement": "EUR" if "cout" in k else "kWh",
                     "name": f"Linky Tempo {k.replace('_', ' ').title()}"
                 },

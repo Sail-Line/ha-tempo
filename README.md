@@ -216,6 +216,14 @@ input_number:
     step: 0.01
     unit_of_measurement: EUR
     icon: mdi:calendar-clock
+
+  linky_conso_abo:
+    name: Conso abonnement
+    min: 0
+    max: 100000
+    step: 0.0001
+    unit_of_measurement: kWh
+    icon: mdi:flash
 ```
 
 Après modification → **Redémarrez Home Assistant**.
